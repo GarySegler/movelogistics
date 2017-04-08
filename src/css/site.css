@@ -1,25 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  /*font: 300 15px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
 }
 
-html, body {
-  height: 100%;
-  /*margin: 0;
-  padding: 0;*/
-  background: #fff;
-  -webkit-font-smoothing: antialiased;
-  color: #545e6f;
-}
+html, body { height: 100%; margin: 0; padding: 0; background: #fff;
+   -webkit-font-smoothing: antialiased; }
 
-.truckLogo {
-  display: block;
-  text-indent: -9999px;
-  width: 142px;
-  height: 104px;
-  background: url(../images/TruckWorldLogo2.5.png);
-  background-size: 142px 104px;
-  
-}
+#page { max-width: 1200px; margin: 0 auto; position: relative; }
+
+/* Text */
+
+h1 { margin: 0 0 1em 0; font-size: 2.8em; font-weight: 700; }
+h2 { margin: 0 0 .5em 0; font-size: 1.6em; font-weight: 700; line-height: 1.1em; }
+h3 { margin: 0 0 .5em 0; font-size: 1.3em; font-weight: 700; }
+h4 { margin: 0 0 1.5em 0; font-size: 1em; font-weight: 700; }
+
+p { margin: 0 0 1em 0; }
+
+a { color: #777474 }\
+a:visited { color: #444344 }
+a.btn { font-size: 1.2em; text-decoration: none; color: #fff;
+  border: 1px solid #fff; padding: 4px 15px; transition: background-color .5s; }
+a.btn:hover { background-color: rgba(0,0,0,.3);}
+
+/* Header */
+
+header { height: 430px; background: #fff url(../images/banner-1200.png) no-repeat center bottom;
+  color: #fff; position: relative;  padding: 5px 0 5px 10px; }
+
+header a.logo { position: absolute; display: block; width: 142px; height: 104px;
+  background: url(../images/ml-logo-world-1x.png) no-repeat 0 0 ; color: #fff }
+
+header a.logo span { display: none; }
+header div.hero { position: absolute; width: 42%; top: 20px; left: 5%; }
+header div.hero h1 { line-height: 1em; margin: 0 0 20px 0; color: #fff; font-weight: 600; letter-spacing: .18em}
+
+/* section all */
+
+section { padding: 0 30px;}
+
+/* section */
+section.main { margin-top: 20px; margin-bottom: 30px; padding: 0; }
+section.main aside { width: 33%; float: left; text-align: center}
+
+section.main .content { margin: 15px; background: no-repeat center top;
+  background-size: 80px 60px; padding-top: 85px}
+
+section.main aside h3 a { color: #000; text-decoration: none; font-size: 1.08em }
+section.main aside h3 a:hover { text-decoration: underline; }
+
+section.main aside .content.residential { background-image: url(../images/residential-icon.png)}
+section.main aside .content.commercial { background-image: url(../images/commercial-icon.png)}
+section.main aside .content.outofstate { background-image: url(../images/outofstate-icon.png)}
