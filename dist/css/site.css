@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+html, body { height: 100%; margin: 0; padding: 0; background: #fff; }
+
+#page { max-width: 1200px; margin: 0 auto; position: relative; }
+
+/* Text */
+
+h1 { margin: 0 0 1em 0; font-size: 2.8em; font-weight: 700; }
+h2 { margin: 0 0 .5em 0; font-size: 1.6em; font-weight: 700; line-height: 1.1em; }
+h3 { margin: 0 0 .5em 0; font-size: 1.3em; font-weight: 700; }
+h4 { margin: 0 0 1.5em 0; font-size: 1em; font-weight: 700; }
+
+p { margin: 0 0 1em 0; }
+
+a { color: #777474 }
+a:visited { color: #444344 }
+a.btn { font-size: 1.2em; text-decoration: none; color: #fff;
+  border: 1px solid #fff; padding: 4px 15px; transition: background-color .5s;
+   }
+a.btn:hover { background-color: rgba(0,0,0,.3); }
+
+/*a { position: relative; text-decoration: none; }*/
+/*a:before { content: ""; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: orange; visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s; }*/
+/*a:hover:before { visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1); }*/
+/*a:hover {color: #000;}*/
+
+/* Header */
+
+header { height: 495px; background: #fff url(../images/move-logistics-banner-1200.jpg) no-repeat center bottom; color: #fff; position: relative;  padding: 5px 0 5px 10px; }
+header a.logo { position: absolute; left: 50px; display: block; background: url(../images/move-logistics-logo-white.jpg); background-repeat: no-repeat; width: 150px; height: 113px; background-size:  150px 113px; }
+header a.logo span { display: none; }
+
+header .callouts { position: relative; top: 10px; margin-right: 15px; float: right; width: 200px; }
+header .callouts a { text-decoration: none; font-size: 1em; }
+header .callouts a img { float: left; height: 20px; margin-top: 3px; margin-right: 5px}
+header .callouts a { position: relative; text-decoration: none;}
+header .callouts a.email { display: block; float: right}
+header .callouts a.phone { float: right}
+/*header .callouts a:before { content: ""; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; background-color: #777474; visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s; }
+header .callouts a:hover:before { visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1); }*/
+
+
+header div.hero { position: absolute; width: 45%; padding: 20px;  height: 30%; top: 130px; left: 52%; background-color: rgba(117,97,64,.5); text-align: center; }
+header div.hero h1 { line-height: 1em; margin: 0 0 20px 0; color: #fff; font-weight: 600; text-shadow: 2px 2px 2px rgba(94,78,51,.9);}
+
+/* section all */
+
+section { padding: 0 30px;}
+section::after{ content: ''; display: block; clear: both;}
+
+/* section main */
+section.main { margin-top: 40px; margin-bottom: 60px; padding: 0; }
+section.main aside { width: 33%; float: left; text-align: center}
+section.main .content { margin: 15px; background: no-repeat center top; background-size: 80px 60px; padding-top: 85px}
+section.main aside h3 a { color: #000; text-decoration: none; font-size: 1.08em }
+section.main aside .content.residential { background-image: url(../images/residential-icon.png)}
+section.main aside .content.commercial { background-image: url(../images/commercial-icon.png)}
+section.main aside .content.outofstate { background-image: url(../images/outofstate-icon.png)}
+
+/* Section Quote */
+
+section.welcome { background-color: #B76738; padding-top: 30px; padding-bottom: 30px; color: #fff; }
+section.welcome article {
+  padding: 0 20px 0 160px;
+  background: url(../images/sean-abrams-move-logistics.jpg) no-repeat 0 5px;
+  background-size: 125px 125px;
+  min-height: 130px;
+}
+
+/* Section testimonials */
+
+section.testimonials {position: relative; background-color: #9CAEBA;   color: #fff; }
+section.testimonials blockquote { position: relative; width: 17%; float: left;   margin-bottom: 30px; padding: 0;}
+section.testimonials blockquote p { margin: 10px 5px 10px 5px; text-align: center; }
+section.testimonials blockquote p.quote { font-style: italic; font-size: 1.2em; }
+section.testimonials blockquote p.credit { color: #777; font-size: .9em; margin-top: 0; padding-left: 20px; line-height: 1.3em; position: relative; text-align: left; }
+section.testimonials blockquote::before { content:'\201c'; color: #777; position: absolute; top: 3px; left: -13px; font-size: 3em; font-family: serif; }
+section.testimonials blockquote p.quote::after { content: '\201d'; font-family: serif; }
+section.testimonials blockquote p.credit::before { content: '\2014'; position: absolute; top: -1px; left: 0; }
+
+/* Footer */
+
+footer { margin: 0 35px 20px 20px; }
+footer .bbb { max-width: 500px; margin: 0 auto;  padding: 120px 20px 120px 20px; background-color: #fff; color: #777; }
+footer .bbb a { background: url(../images/bbb.png) no-repeat center center; width: 270px; height: 103px; }
+footer .bbb a span { display: none;}
+footer .bbb img { position: relative; top: 15px}
+footer .content span { display: inline; color: #777; font-size: .8em; }
+footer a { margin-left: 30px; color: #777; font-size: .8em; float: right; }
+footer a:visited { color: #777}
+footer a:hover { color: #000}
